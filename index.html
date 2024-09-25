@@ -21,16 +21,17 @@
 		<div>
 			<h2 id="h2"> 下面是为了检验表单功能 </h2>
 
-			<form action="#">
+			<form action="https://baidu.com" method="get">
 				<label>用户名: </label> <input type="text" name="username">
 				<label>密码: </label> <input type="password" name="pwd">
 				<button id="submit_btn">提交</button>
 			</form>
 			<script type="text/javascript">
 				let submit_btn = document.getElementById("submit_btn")
-				submit_btn.addEventListener(function () {
+				submit_btn.onclick = function (e)  {
+					e.preventDefault()
 					alert("Submit")
-				})
+				}
 			</script>
 	</div>
 	</body>
