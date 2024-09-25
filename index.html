@@ -14,6 +14,24 @@
 			<p> the content of the html </p>
 
 			正常文字<span style="color:blue"> this a span </span>
+			<a href="https://ccst.jlu.edu.cn"> 吉林大学计算机学院</a>
+			<a href="https://csw.jlu.edu.cn"> 吉林大学软件学院</a>
+		</div>
+
+		<div>
+			<h2 id="h2"> 下面是为了检验表单功能 </h2>
+
+			<form>
+				<label>用户名: </label> <input type="text" name="username">
+				<label>密码: </label> <input type="password" name="pwd">
+				<button id="submit_btn">提交</button>
+			</form>
+			<script type="text/javascript">
+				let submit_btn = document.getElementById("submit_btn")
+				submit_btn.addEventListener(() =>{
+					alert("Submit")
+				})
+			</script>
 		</div>
 	</body>
 </html>
